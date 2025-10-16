@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <!-- Here is my simple 2048 game made with html, css, and js -->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" href="2048 Logo.png"/>
+        <title>2048!</title>
+    </head>
+    <body class="lighttheme"> <!-- Starting theme is "light" one -->
+        <header>
+            <h1>2048 Game</h1>
+            <button id="instructions">Instructions</button>
+            <button id="theme">Theme</button>
+        </header>
+        <hr style="width: 50%; color: black;"/>
+        <!-- Invisible untill the button is clicked -->
+        <div class="popupins" id="popupins" style="display:none;">
+            <h2>Instructions, how to play?</h2>
+            <ul>
+                <li>You can use arrows ↑↓→← to move all the tiles wherever it's more convenient for you.</li>
+                <li>This game is about powers of 2 (2, 4, 8, 16, 32, ...).</li>
+                <li>All you have to do is to try to merge the numbers untill you reach 2048 or even more!</li>
+                <li>Hope you enjoy it, it's a simple and famous game made with frontend tools.</li>
+                <br/>Understood? Now have fun!
+                <button id="ok">Play</button>
+            </ul>
+        </div>
+        <div class="header2">
+            <h2>Score: <span id="score">0</span></h2>
+            <button id="reset">New game</button>
+        </div>
+        <!-- Invisible as well untill the player looses -->
+        <div id="board" class="gameboard">
+            <div id="gameover" class="gameoverboard gameboard" style="display: none;">
+                <h1 class="gameover">Game Over!</h1>
+            </div>
+        </div>
+        
+        <script src="game.js"></script>  
+        <script src="script.js"></script>
+    </body>
+</html>

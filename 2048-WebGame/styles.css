@@ -1,0 +1,149 @@
+/* Basic styles document has */
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 25px;
+    width: 7%;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: small;
+    background-color: #cfbb97;
+    border: 2px black;
+}
+
+button:hover {
+    color: rgb(23, 35, 58);
+    background-color: #fdd385;
+    font-size: medium;
+    width: 8%;
+    height: 27px;
+    font-weight: bold;
+}
+
+/* The "instructions" popup styles */
+
+.popupins {
+    width: 35%;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border: 5px solid #676755;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    box-shadow: 0 5px 30px 10px rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.popupins li {
+    font-size: 15px;
+    margin:5px;
+}
+
+.popupins h2 {
+    text-shadow: 1px 1px 5px black;
+}
+
+#ok {
+    width: 15%;
+}
+
+#ok:hover {
+    width: 17%;
+}
+
+/* Header2 is the div for the score and new game button */
+
+.header2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The game itself */
+
+.gameboard {
+    width: 400px;
+    height: 400px;
+    border: 6px solid #9b8a7a;
+    background-color: #9b8a7a;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.cube {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #9b8a7a;
+    background-color: #bead98;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Game over styles */
+
+.gameover {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.gameoverboard {
+    background-color: rgba(190, 173, 152, 0.4); /* Kind of transparency for the game over screen */
+    border: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* "d" stands for the tile's digits (2, ..., 16, ..., 128, ..., 1024, ...) */
+
+.d1 {font-size: 46px;}
+.d2 {font-size: 41px;}
+.d3 {font-size: 36px;}
+.d4 {font-size: 31px;}
+
+/* Tile's or cube's text colors */
+
+.n2, .n4 {color: #756452;}
+.n8, .n16, .n32, .n64, .n128, .n256, .n512, .n1024, .n2048, .n4096, .n8192 {color: #ffffff;}
+
+/* #theme is actually the theme changing button */
+
+#theme {
+    width: 5%;
+}
+
+#theme:hover {
+    width: 6%;
+}
+
+/* Themes for all the document "light" and "dark" */
+
+.darktheme {
+    background-color: #1f1f1f;
+    color: #dedede;
+}
+
+.lighttheme {
+    background-color: #dedede;
+    color: #1f1f1f;
+}
